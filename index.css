@@ -1,0 +1,52 @@
+body {
+    background: lightgrey;
+}
+
+#rectangle-sender {
+    position: relative;
+    width: 250px;
+    margin-left: 70px;
+    padding: 2px;
+    background: purple;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+#bubble-sender::after {
+    content: "";
+    position: absolute;
+    right:30;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 20px solid purple;
+}
+
+#rectangle-receiver {
+    position: relative;
+    width: 250px;
+    margin-left: 10px;
+    padding: 2px;
+    background: #d2bedf;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    
+}
+
+#bubble-receiver::after {
+    content: "";
+    position: absolute;
+    left: 35px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right:20px solid transparent;
+    border-top: 20px solid #d2bedf;
+}
+
+#text-align {
+    margin-left: 20px;
+    color:white;
+}
+
